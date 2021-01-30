@@ -1,3 +1,3 @@
 # otarCopy
 
-Scripting work stuff
+Chrome extension for scripting work tasks, eZ
