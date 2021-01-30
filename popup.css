@@ -1,0 +1,55 @@
+body {
+    height: 320px;
+    width: 540px;
+}
+
+#button {
+        border-radius: 8px;
+        font-size: 15px;
+        width: 150px;
+        height: 35px;
+        background-color: #4d797e;
+        color: white;
+        border: none;
+        transition-duration: 0.1s;
+}
+
+#button:hover {
+    color: black;
+    border: 2px solid #89aeb2;
+    background-color: white;
+}
+
+#copy_btn {
+  font-size: 15px;
+  width: 150px;
+  height: 35px;
+  background-color: #4d797e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition-duration: 0.1s;
+  float: right;
+  
+}
+
+#copy_btn:hover {
+  color: black;
+  border: 2px solid #89aeb2;
+  background-color: white;
+}
+
+/* .tg {
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* css kinda stacked here, because i made a HTML table on a 
+3rd party site. who writes their own tables anymore, am i right? */
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:black;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}

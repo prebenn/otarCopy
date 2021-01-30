@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>otarCopy</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <button id="button">Fyll inn data</button>
+  <button id="copy_btn">Kopier data</button>
+  <br></br>
+
+<!-- Table created using 3rd party website, because I value my time
+That's why class and id's are kinda wack. Who builds tables manually lmao couldn't be me
+But note the id's in td elements, they order data in the correct order. City code + code name from looker -->
+    <table class="tg">
+    <thead>
+      <tr>
+        <th class="tg-0pky"><span style="font-weight:bold">City</span></th>
+        <th class="tg-0pky"><span style="font-weight:bold">Purchases</span></th>
+        <th class="tg-0pky"><span style="font-weight:bold">TTV</span></th>
+        <th class="tg-0pky"><span style="font-weight:bold">ADT</span></th>
+        <th class="tg-0pky"><span style="font-weight:bold">Avg Delivery </span><br><span style="font-weight:bold">Rating</span></th>
+        <th class="tg-0lax"><span style="font-weight:bold">Avg Food </span><br><span style="font-weight:bold">Rating</span></th>
+        <th class="tg-0lax"><span style="font-weight:bold">Rejection %</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-0pky"><span style="font-weight:bold">TRD</span></td>
+        <td class="tg-0pky" id="trdPurchases"></td>
+        <td class="tg-0pky" id="trdTtv"></td>
+        <td class="tg-0pky" id="trdAdt"></td>
+        <td class="tg-0pky" id="trdAdr"></td>
+        <td class="tg-0lax" id="trdAfr"></td>
+        <td class="tg-0lax" id="trdRej"></td>
+      </tr>
+      <tr>
+        <td class="tg-0pky"><span style="font-weight:bold">TRM</span></td>
+        <td class="tg-0pky" id="trmPurchases"></td>
+        <td class="tg-0pky" id="trmTtv"></td>
+        <td class="tg-0pky" id="trmAdt"></td>
+        <td class="tg-0pky" id="trmAdr"></td>
+        <td class="tg-0lax" id="trmAfr"></td>
+        <td class="tg-0lax" id="trmRej"></td>
+      </tr>
+      <tr>
+        <td class="tg-0pky"><span style="font-weight:bold">STV</span></td>
+        <td class="tg-0pky" id="stvPurchases"></td>
+        <td class="tg-0pky" id="stvTtv"></td>
+        <td class="tg-0pky" id="stvAdt"></td>
+        <td class="tg-0pky" id="stvAdr"></td>
+        <td class="tg-0lax" id="stvAfr"></td>
+        <td class="tg-0lax" id="stvRej"></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"><span style="font-weight:bold">OSL</span></td>
+        <td class="tg-0lax" id="oslPurchases"></td>
+        <td class="tg-0lax" id="oslTtv"></td>
+        <td class="tg-0lax" id="oslAdt"></td>
+        <td class="tg-0lax" id="oslAdr"></td>
+        <td class="tg-0lax" id="oslAfr"></td>
+        <td class="tg-0lax" id="oslRej"></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"><span style="font-weight:bold">Totalt</span></td>
+        <td class="tg-0lax" id="totalPurchases"></td>
+        <td class="tg-0lax" id="totalTtv"></td>
+        <td class="tg-0lax" id="totalAdt"></td>
+        <td class="tg-0lax" id="totalAdr"></td>
+        <td class="tg-0lax" id="totalAfr"></td>
+        <td class="tg-0lax" id="totalRej"></td>
+      </tr>
+    </tbody>
+    </table>
+  <script src="popup.js" charset="utf-8"></script>
+</body>
+</html>
