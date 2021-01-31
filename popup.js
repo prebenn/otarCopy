@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelector('button').addEventListener('click', onclick, false)
     
-    // onclick for butten to react to and send a request to content.js to grab the raw data
+    // onclick for button to react to and send a request to content.js to grab the raw data
     // and send it to us socially distanced ppl here at popup.js to inject into html file
     function onclick () {
       chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
@@ -86,7 +86,6 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('trmRej').innerHTML = res.trmRej;
       document.getElementById('stvRej').innerHTML = res.stvRej;
       document.getElementById('oslRej').innerHTML = res.oslRej;
-
 
     }
   }, false)
