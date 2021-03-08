@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('trmPurchases').innerHTML = res.trmPurchases;
       document.getElementById('stvPurchases').innerHTML = res.stvPurchases;
       document.getElementById('oslPurchases').innerHTML = res.oslPurchases;
+      document.getElementById('berPurchases').innerHTML = res.berPurchases;
       document.getElementById('totalPurchases').innerHTML = res.totalPurchases;
 
     
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('trmTtv').innerHTML = res.trmTtv;
       document.getElementById('stvTtv').innerHTML = res.stvTtv;
       document.getElementById('oslTtv').innerHTML = res.oslTtv;
+      document.getElementById('berTtv').innerHTML = res.berTtv;
       document.getElementById('totalTtv').innerHTML = res.totalTtv;
 
 
@@ -62,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('trmAdt').innerHTML = res.trmAdt;
       document.getElementById('stvAdt').innerHTML = res.stvAdt;
       document.getElementById('oslAdt').innerHTML = res.oslAdt;
+      document.getElementById('berAdt').innerHTML = res.berAdt;
       document.getElementById('totalAdt').innerHTML = res.totalAdt;
 
       
@@ -70,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('trmAdr').innerHTML = res.trmAdr;
       document.getElementById('stvAdr').innerHTML = res.stvAdr;
       document.getElementById('oslAdr').innerHTML = res.oslAdr;
+      document.getElementById('berAdr').innerHTML = res.berAdr;
       document.getElementById('totalAdr').innerHTML = res.totalAdr;
 
 
@@ -78,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('trmAfr').innerHTML = res.trmAfr;
       document.getElementById('stvAfr').innerHTML = res.stvAfr;
       document.getElementById('oslAfr').innerHTML = res.oslAfr;
+      document.getElementById('berAfr').innerHTML = res.berAfr;
       document.getElementById('totalAfr').innerHTML = res.totalAfr;
 
       
@@ -86,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('trmRej').innerHTML = res.trmRej;
       document.getElementById('stvRej').innerHTML = res.stvRej;
       document.getElementById('oslRej').innerHTML = res.oslRej;
+      document.getElementById('berRej').innerHTML = res.berRej;
 
     }
   }, false)
