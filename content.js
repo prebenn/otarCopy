@@ -51,66 +51,22 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   let stvRej;
   let berRej;
 
-  // yea yea DRY but it's almost 2am
+  let rejArr = [rej1, rej2, rej3, rej4, rej5];
 
-  if(rej1.includes("Oslo")) {
-    oslRej = rej1.slice(-5);
-  } else if (rej2.includes("Oslo")) {
-    oslRej = rej2.slice(-5);
-  } else if (rej3.includes("Oslo")) {
-    oslRej = rej3.slice(-5);
-  } else if (rej4.includes("Oslo")) {
-    oslRej = rej4.slice(-5);
-  } else if (rej5.includes("Oslo")) {
-    oslRej = rej5.slice(-5);
-  }
-
-  if(rej1.includes("Trondheim")) {
-    trdRej = rej1.slice(-5);
-  } else if (rej2.includes("Trondheim")) {
-    trdRej = rej2.slice(-5);
-  } else if (rej3.includes("Trondheim")) {
-    trdRej = rej3.slice(-5);
-  } else if (rej4.includes("Trondheim")) {
-    trdRej = rej4.slice(-5);
-  } else if (rej5.includes("Trondheim")) {
-    trdRej = rej5.slice(-5);
-  }
-
-  if(rej1.includes("Tromsø")) {
-    trmRej = rej1.slice(-5);
-  } else if (rej2.includes("Tromsø")) {
-    trmRej = rej2.slice(-5);
-  } else if (rej3.includes("Tromsø")) {
-    trmRej = rej3.slice(-5);
-  } else if (rej4.includes("Tromsø")) {
-    trmRej = rej4.slice(-5);
-  } else if (rej5.includes("Tromsø")) {
-    trmRej = rej5.slice(-5);
-  }
-
-  if(rej1.includes("Stavanger")) {
-    stvRej = rej1.slice(-5);
-  } else if (rej2.includes("Stavanger")) {
-    stvRej = rej2.slice(-5);
-  } else if (rej3.includes("Stavanger")) {
-    stvRej = rej3.slice(-5);
-  } else if (rej4.includes("Stavanger")) {
-    stvRej = rej4.slice(-5);
-  } else if (rej5.includes("Stavanger")) {
-    stvRej = rej5.slice(-5);
-  }
-
-  if(rej1.includes("Bergen")) {
-    berRej = rej1.slice(-5);
-  } else if (rej2.includes("Bergen")) {
-    berRej = rej2.slice(-5);
-  } else if (rej3.includes("Bergen")) {
-    berRej = rej3.slice(-5);
-  } else if (rej4.includes("Bergen")) {
-    berRej = rej4.slice(-5);
-  } else if (rej5.includes("Bergen")) {
-    berRej = rej5.slice(-5);
+  // strict checking rej
+  
+  for(let i = 0; i < rejArr.length; i++) {
+    if(rejArr[i].includes("Oslo")) {
+      oslRej = rejArr[i].slice(-5);
+    } else if(rejArr[i].includes("Trondheim")) {
+      trdRej = rejArr[i].slice(-5);
+    } else if(rejArr[i].includes("Tromsø")) {
+      trmRej = rejArr[i].slice(-5);
+    } else if(rejArr[i].includes("Stavanger")) {
+      stvRej = rejArr[i].slice(-5);
+    } else if(rejArr[i].includes("Bergen")) {
+      berRej = rejArr[i].slice(-5);
+    } 
   }
 
 
