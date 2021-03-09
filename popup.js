@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('button').addEventListener('click', onclick, false)
     
     // onclick for button to react to and send a request to content.js to grab the raw data
-    // and send it to us socially distanced ppl here at popup.js to inject into html file
+    // and send it to us socially distanced funcs here at popup.js
     function onclick () {
       chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
         chrome.tabs.sendMessage(tabs[0].id, 'hi', setCount)
@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const urlField = document.querySelector('table');
       
-      // create a Range object
+      // create a range object
       const range = document.createRange();  
 
-      // set the Node to select the "range"
+      // set the node to select the "range"
       range.selectNode(urlField);
 
-      // add the Range to the set of window selections
+      // add the range to the set of window selections
       window.getSelection().addRange(range);
       
       // execute "copy", can't "cut" in this case

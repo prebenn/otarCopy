@@ -1,4 +1,3 @@
-
 // reacting to incoming message from popup.js
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
@@ -70,8 +69,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   }
 
 
-  // and a SLICK one line response with the sendResponse method, if I do say so myself. sending the data we collected back to popup to be drawn 
-  // in the HTML table in popup.hmtl 
+  // and a SLICK one line response, if I do say so myself. sending the data we collected back to popup to be drawn 
 
   sendResponse({trdPurchases: trdPurchases, trmPurchases: trmPurchases, stvPurchases: stvPurchases, oslPurchases: oslPurchases, berPurchases: berPurchases, totalPurchases: totalPurchases, 
                 trdTtv: trdTtv, trmTtv:  trmTtv, stvTtv: stvTtv, oslTtv: oslTtv, berTtv: berTtv, totalTtv: totalTtv,
