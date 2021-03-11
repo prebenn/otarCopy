@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function setCount (res) {
 
 
-      //Printing purchases to table 
+      // printing purchases to table 
       document.getElementById('trdPurchases').innerHTML = res.trdPurchases;
       document.getElementById('trmPurchases').innerHTML = res.trmPurchases;
       document.getElementById('stvPurchases').innerHTML = res.stvPurchases;
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('totalPurchases').innerHTML = res.totalPurchases;
 
     
-      // Printing TTV to table
+      // printing TTV to table
       document.getElementById('trdTtv').innerHTML = res.trdTtv;
       document.getElementById('trmTtv').innerHTML = res.trmTtv;
       document.getElementById('stvTtv').innerHTML = res.stvTtv;
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('totalTtv').innerHTML = res.totalTtv;
 
 
-      // Printing ADT to table
+      // printing ADT to table
       document.getElementById('trdAdt').innerHTML = res.trdAdt;
       document.getElementById('trmAdt').innerHTML = res.trmAdt;
       document.getElementById('stvAdt').innerHTML = res.stvAdt;
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('totalAdt').innerHTML = res.totalAdt;
 
       
-      // Printing ADR to table
+      // printing ADR to table
       document.getElementById('trdAdr').innerHTML = res.trdAdr;
       document.getElementById('trmAdr').innerHTML = res.trmAdr;
       document.getElementById('stvAdr').innerHTML = res.stvAdr;
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('totalAdr').innerHTML = res.totalAdr;
 
 
-      //Printing AFR to table
+      // printing AFR to table
       document.getElementById('trdAfr').innerHTML = res.trdAfr;
       document.getElementById('trmAfr').innerHTML = res.trmAfr;
       document.getElementById('stvAfr').innerHTML = res.stvAfr;
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('totalAfr').innerHTML = res.totalAfr;
 
       
-      //Printing Rejection % to table
+      // printing Rejection % to table
       document.getElementById('trdRej').innerHTML = res.trdRej;
       document.getElementById('trmRej').innerHTML = res.trmRej;
       document.getElementById('stvRej').innerHTML = res.stvRej;
